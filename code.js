@@ -18,3 +18,12 @@ function isFive(num) {
         return false;
     }
 }
+
+function isEven(num) {
+    if ((typeof num !== "boolean") && (num % 2 === 0)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
