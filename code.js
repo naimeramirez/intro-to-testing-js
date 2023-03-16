@@ -37,3 +37,10 @@ function isVowel(x) {
     }
 }
 
+function add(x, y) {
+    if (Number(x + y)) {
+        return Number(x) + Number(y);
+    } else {
+        return "NaN";
+    }
+}
