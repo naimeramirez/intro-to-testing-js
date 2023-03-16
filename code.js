@@ -37,10 +37,19 @@ function isVowel(x) {
     }
 }
 
-function add(x, y) {
-    if (Number(x + y)) {
-        return Number(x) + Number(y);
+//************ Why did this work???????????
+// function add(x, y) {
+//     if (Number(x + y)) {
+//         return Number(x) + Number(y);
+//     } else {
+//         return "NaN";
+//     }
+// }
+
+function add(x,y) {
+    if (isNaN(x) || isNaN(y)) {
+        return "NaN"
     } else {
-        return "NaN";
+        return Number(x) + Number(y);
     }
 }
